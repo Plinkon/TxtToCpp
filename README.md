@@ -5,4 +5,4 @@ ___
 
 ## I will have a video on my yt explaining how this works
 
-**my yt: ** PlinkonYT
+**my yt:** PlinkonYT
