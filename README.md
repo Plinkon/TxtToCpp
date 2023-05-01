@@ -1,5 +1,5 @@
 # TxtToCpp
-
+___
 # About
 This is a *C++* project I am making. It makes incorporating **.txt** files into a C++ project so much *easier* than ever before. You can *read* certain values from a text file, you can also *write* certain values to a text file aswell.  
 Obviously, that is not *everything* in the project / library. If you want to look at ***all*** of the features, there is a file called *docs.txt* inside of the project. You can open that file and read all of the features there. *or* you could scroll down to the *features* section in this file.
@@ -15,6 +15,6 @@ next, open up the file and go into the *src* folder and copy and paste all of th
 then, you need to include the ***includes.h*** file inside of your main project file. *or* you could use the *template.cpp* file and everything will be included.  
 1. Use the code
 finally, you can start coding! If you need help, you can visit the *docs.txt* file inside the *help* folder. Have fun!
----
+___
 ## Misc
 add more stuff
