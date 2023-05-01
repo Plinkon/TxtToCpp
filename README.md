@@ -15,5 +15,9 @@ then, you need to include the ***includes.h*** file inside of your main project 
 1. Use the code
 finally, you can start coding! If you need help, you can visit the *docs.txt* file inside the *help* folder. Have fun!
 ___
-## Misc
-add more stuff
+## Example use case
+Okay, so let's say that you have some sort of application and there is a *settings* menu. You could use this project / library to ***save*** the user's settings and ***load*** those settings when you reatart the application.  
+Normally, this would take a while to just read and write those settings, *but* with txtToCpp, it could be done *very easily*.
+___
+## Docs
+put docs here
