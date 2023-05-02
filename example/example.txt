@@ -1,0 +1,29 @@
+# Hello! This is the example .txt file!
+# You can look in here if you want, and edit the values of things!
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+int value = 5
+
+string value = "hello, I am a string!"
+
+bool value = true
+
+char value = 'f'
+
+# That text above is for the value checkers. It looks through the file for a specific piece of text.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# There is also a "replace text" function, you can replace text in the txt file, you can also do this with comments
+$ This is a custom comment symbol that I have, you might see it as a normal coment symbol and that's because you ran the code before. The symbol is the dollar sign($), but I ran a command that changes the symbol.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# If you ran the code before looking at this file, you will see the text below, "after code ran". That is because the program looked for the text, "after code ran" and replacing it with, "after code ran"
+
+before code ran
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# You can also write text to a file, I called a function that should write the text, "hello, I was written by the code"
