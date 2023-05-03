@@ -20,4 +20,3 @@ Okay, so let's say that you have some sort of application and there is a *settin
 Normally, this would take a while to just read and write those settings, *but* with txtToCpp, it could be done *very easily*.
 ___
 ## Docs
-put docs here
