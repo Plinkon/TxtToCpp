@@ -120,7 +120,7 @@ bool getIntValue(string fileName, string search, int& value, bool skipComments, 
                 continue;
             }
             if (line.find(search) != string::npos) {
-                string valueString = line.substr(line.find(" = ") + 1);
+                string valueString = line.substr(line.find("=") + 1);
                 if (isInt(valueString)) {
                     value = stoi(valueString);
                     found = true;
@@ -146,7 +146,7 @@ bool getDoubleValue(string fileName, string search, double& value, bool skipComm
                 continue;
             }
             if (line.find(search) != string::npos) {
-                string valueString = line.substr(line.find(" = ") + 1);
+                string valueString = line.substr(line.find("=") + 1);
                 if (isDouble(valueString)) {
                     value = stod(valueString);
                     found = true;
@@ -172,7 +172,7 @@ bool getStringValue(string fileName, string search, string& value, bool skipComm
                 continue;
             }
             if (line.find(search) != string::npos) {
-                string valueString = line.substr(line.find(" = ") + 1);
+                string valueString = line.substr(line.find("=") + 1);
                 if (isString(valueString)) {
                     value = valueString;
                     found = true;
@@ -198,7 +198,7 @@ bool getBoolValue(string fileName, string search, bool& value, bool skipComments
                 continue;
             }
             if (line.find(search) != string::npos) {
-                string valueString = line.substr(line.find(" = ") + 1);
+                string valueString = line.substr(line.find("=") + 1);
                 if (isBool(valueString)) {
                     value = toBool(valueString);
                     found = true;
@@ -225,7 +225,7 @@ bool getCharValue(string fileName, string search, char& value, bool skipComments
             }
 
             if (line.find(search) != string::npos) {
-                string valueString = line.substr(line.find(" = ") + 1);
+                string valueString = line.substr(line.find("=") + 1);
                 if (isChar(valueString)) {
                 value = valueString[0];
                 found = true;

@@ -1,4 +1,4 @@
-#include "includes.h"
+#include "TxtToCpp.h"
 
 int main()
 {
@@ -7,30 +7,36 @@ int main()
     std::string strVal;
     bool boolVal;
     char charVal;
+    double doubleVal;
 
     if (txtcpp::getIntValue(filename, "int value", intVal, true, '#'))
     {
         std::cout << "Int value found: " << intVal << "\n";
     }
 
-    else if (txtcpp::getStringValue(filename, "string value", strVal, true, '#'))
+    if (txtcpp::getDoubleValue(filename, "double value", doubleVal, true, '#'))
     {
-        std::cout << "String value found: " << strVal << "\n";
+        std::cout << "Double value found: " << doubleVal << "\n";
     }
 
-    else if (txtcpp::getBoolValue(filename, "bool value", boolVal, true, '#'))
+    if (txtcpp::getBoolValue(filename, "bool value", boolVal, true, '#'))
     {
-        std::cout << "Boolean value found: " << boolVal << "\n";
+        std::cout << "Bool value found: " << boolVal << "\n";
     }
 
-    else if (txtcpp::getCharValue(filename, "char value", charVal, true, '#'))
+    if (txtcpp::getCharValue(filename, "char value", charVal, true, '#'))
     {
         std::cout << "Char value found: " << charVal << "\n";
     }
 
-    //txtcpp::replaceCommentSymbolInFile(filename, "$", "#");
+    if (txtcpp::getStringValue(filename, "string value", strVal, true, '#'))
+    {
+        std::cout << "String value found: " << strVal << "\n";
+    }
 
-    //txtcpp::replaceText(filename, "before code ran", "after code ran");
+    txtcpp::replaceCommentSymbolInFile(filename, "$", "#");
 
-    //txtcpp::writeText(filename, "hello, I was written by the code");
+    txtcpp::replaceText(filename, "before code ran", "after code ran");
+
+    txtcpp::writeText(filename, "hello, I was written by the code");
 }
