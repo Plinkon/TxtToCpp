@@ -31,3 +31,16 @@ ___
 txtcpp::replaceCommentSymbolInFile(string filename, const char* oldSymbol, const char* newSymbol);
 ```
 This function allows you to replace a comment symbol in a file. It looks at the first character on each line. The first paramater is the filename, the next one is the symbol you want to look for. The last one is the symbol you want to replace it with. Remember that the *oldSymbol* and *newSymbol* are *const char*s. That means you have to put the character inside of '**single quotes**'.
+___
+```c++
+txtcpp::getIntValue(string fileName, string search, int& value, bool skipComments, char commentSymbol);   
+
+txtcpp::getDoubleValue(string fileName, string search, double& value, bool skipComments, char commentSymbol);   
+ 
+txtcpp::getBoolValue(string fileName, string search, bool& value, bool skipComments, char commentSymbol);   
+
+txtcpp::getStringValue(string fileName, string search, string& value, bool skipComments, char commentSymbol);   
+
+txtcpp::getCharValue(string fileName, string search, char& value, bool skipComments, char commentSymbol);   
+```
+These functions allow you to *search for certian pices of text* inside of a *.txt* file. You could *search for certain values* inside of that text file, this is helpfull because for example you could have a settings.txt file for an application and you could *look for those values*. I think the paramaters are pretty self explanitory.
