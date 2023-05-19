@@ -26,7 +26,7 @@ ___
 Firstly, to install TxtToCpp, you need to download the library. In *Github*, you need to hit the green ***code*** button and hit ***download as zip***. Then you have sucsessfully installed the library.  
 If you want to include this into your own project, you need to copy and paste the files in the *"src"* folder. Then type this:
 ```cpp
-#include <TxtToCpp.h>
+#include "TxtToCpp.h"
 ```
 Then you can start coding!
 ___
